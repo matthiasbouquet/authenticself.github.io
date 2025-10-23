@@ -14,8 +14,11 @@ export function Booking() {
 
           <ul className="mt-6 text-gray-700 space-y-2">
             <li>• 30 minutes, remote by video or phone</li>
-            <li>• We'll define clear next steps and expectations</li>
-            <li>• You can ask about single-session or short-course options</li>
+            <li>• We'll discuss your goals, whether hypnotherapy is likely to help, and the best next steps</li>
+            <li>• Confidential and flexible appointments available in the evenings and weekends</li>
+            <li>• Please discuss your chronic health conditions with your doctor before starting hypnotherapy</li>
+            <li>• Available in English, French, and Spanish</li>
+            <li>• Note that I am in training and this is not a registered practice</li>
           </ul>
         </div>
 
