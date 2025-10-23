@@ -7,19 +7,23 @@ export function Intro() {
         <div className="md:col-span-2">
           <h2 className="text-2xl md:text-3xl font-bold">Evidence-based hypnotherapy for real identity changes</h2>
           <p className="mt-4 text-gray-700">
-            Contrary to popular belief, hypnosis is <strong>not</strong> something you can do to someone else, and it doesn't require a trance state. It's a state of 
-            <strong>focused attention</strong> that you can achieve for yourself.
-            When you're in this state, you're more <strong>open to suggestions</strong>, more <strong>relaxed</strong>, more <strong>present</strong>, and more attuned to your own feelings, thoughts and behaviours.
-            Through this process, you can achieve more <strong>clarity</strong>, and generate <strong>real and lasting changes</strong> in your life.
+            Contrary to popular belief, hypnosis is not something you do to someone else, and it's not about reaching a trance state. It's a state of <strong>focused attention</strong> that you can achieve for yourself.
+            In hypnosis, you are more <strong>open to suggestions</strong>, more <strong>relaxed</strong>, more <strong>present</strong>, and more attuned to your own <strong>feelings, thoughts and behaviours</strong>.
           </p>
           <p className="mt-4 text-gray-700">
-            In my practice, I blend <strong>clinical hypnosis</strong> with <strong>cognitive and behavioural techniques</strong> to deliver 
-            practical and personalised therapy. My work focuses on <strong>measurable improvements</strong> — better sleep,
-            calmer days, improved focus, more confidence, more authenticity, and more satisfying relationships.
+            Through this process, <strong>self-discoveries</strong> are facilitated, and you can achieve more <strong>clarity</strong>, and generate <strong>real and lasting changes</strong> in your life.
           </p>
           <p className="mt-4 text-gray-700">
+            My role is to guide you through this process, and <strong>stimulate your own agency</strong> to make empowered changes.
+            In my practice, I blend clinical hypnosis with cognitive and behavioural techniques to deliver 
+            practical and personalised therapy. My work focuses on <strong>measurable improvements</strong> — more productivity, better sleep,
+            calmer days, improved focus, more confidence, more authenticity, more assertiveness, and more satisfying relationships.
             My work is about reconnecting you to your authentic self, in alignment with your values and goals.
           </p>
+          <p className="mt-4 text-gray-700">
+            If you feel stuck in life, keep getting in your own way and growing dissatisfied, hypnosis may be the key to unlock your potential.
+          </p>
+
 
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div className="flex items-start gap-4">
