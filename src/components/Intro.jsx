@@ -7,9 +7,12 @@ export function Intro() {
         <div className="md:col-span-2">
           <h2 className="text-2xl md:text-3xl font-bold">Evidence-based hypnotherapy for real life changes</h2>
           <p className="mt-4 text-gray-700">
-            I blend clinical hypnosis with cognitive and behavioural techniques to deliver 
+            Contrary to popular belief, hypnosis is not something you can do to someone else, and it doesn't require a trance state. It's a state of focused attention that you can achieve for yourself.
+            When you're in this state, you're more open to suggestions, more relaxed, more present, and more attuned to your own feelings, thoughts and behaviours.
+            Through this process, you can achieve more clarity, more confidence, and more real and lasting changes in your life.
+            In my practice, I blend clinical hypnosis with cognitive and behavioural techniques to deliver 
             practical and personalised therapy. My work focuses on measurable improvements — better sleep,
-            calmer days, improved focus and more satisfying relationships.
+            calmer days, improved focus, more confidence, more authenticity, and more satisfying relationships.
           </p>
 
           <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
