@@ -1,5 +1,5 @@
 import React from "react";
-import { SiLinkedin, SiInstagram } from "react-icons/si";
+import { SiLinkedin, SiInstagram, SiYoutube } from "react-icons/si";
 
 export function Bio() {
   return (
@@ -41,6 +41,16 @@ export function Bio() {
           >
             <SiInstagram size={16} className="mr-2" />
             <span>Instagram</span>
+          </a>
+          <a
+            href="https://youtube.com/@matthiasbouquet?si=ktQLvjKCezPwOSbp"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center px-3 py-1.5 rounded-lg bg-red-50 text-red-700 hover:bg-red-100"
+            aria-label="YouTube channel"
+          >
+            <SiYoutube size={16} className="mr-2" />
+            <span>YouTube</span>
           </a>
         </div>
       </div>
