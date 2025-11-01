@@ -13,6 +13,14 @@ export default function BlogLoopOfAnxiety() {
             <p><em>Estimated reading time: 9–10 minutes</em></p>
           </header>
 
+          <figure>
+            <img
+              src="/images/trader-stressed.jpg"
+              alt="A stressed professional staring at screens, illustrating anxious prediction loops"
+            />
+            <figcaption>A mind caught in predictive loops keeps scanning for what might go wrong.</figcaption>
+          </figure>
+
           <p>Have you ever had a thought that just won’t leave you alone?</p>
 
           <p>You’re trying to relax, maybe scroll your phone or fall asleep — but your mind keeps replaying the same worry on loop. Something you said. Something that might go wrong. Something you <em>can’t quite solve.</em></p>
@@ -39,6 +47,14 @@ export default function BlogLoopOfAnxiety() {
 
           <p>But if there’s <strong>no clear answer</strong>, the brain doesn’t close the file — and that’s when the loop begins. It keeps asking, <em>“What if…?”</em> over and over, searching for closure that never comes.</p>
 
+          <figure>
+            <img
+              src="/images/translucid-sphere.jpg"
+              alt="Abstract translucent spheres representing uncertain possibilities and predictions"
+            />
+            <figcaption>Prediction under uncertainty: many possible futures, none fully resolved.</figcaption>
+          </figure>
+
           <blockquote>
             <p>“Anxiety is the dizziness of freedom.” — Søren Kierkegaard</p>
           </blockquote>
@@ -63,6 +79,14 @@ export default function BlogLoopOfAnxiety() {
             <p>“We’re handling it. You can close this tab now.”</p>
           </blockquote>
 
+          <figure>
+            <img
+              src="/images/procrastination.jpg"
+              alt="A desk with many unfinished tasks, symbolizing the Zeigarnik effect"
+            />
+            <figcaption>Unfinished tasks stick in memory — your brain keeps them active until closed.</figcaption>
+          </figure>
+
           <hr />
 
           <h2>3. The Song Stuck in Your Head — and the Worry That Won’t Go Away</h2>
@@ -70,6 +94,14 @@ export default function BlogLoopOfAnxiety() {
           <p>You know when a song gets stuck in your head? That’s called an <em>earworm</em> — and it happens for a similar reason.</p>
 
           <p>When you hear part of a song but don’t reach the end, your brain holds onto it. It keeps looping the melody, trying to complete the sequence.</p>
+
+          <figure>
+            <img
+              src="/images/nightsky.jpg"
+              alt="Night sky with subtle patterns, evoking repetitive loops like earworms"
+            />
+            <figcaption>Loops can be soothing or intrusive — the brain seeks completion either way.</figcaption>
+          </figure>
         </article>
       </main>
       <Footer />
