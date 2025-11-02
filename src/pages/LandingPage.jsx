@@ -51,7 +51,7 @@ export default function LandingPage() {
               className="block rounded-2xl bg-white shadow hover:shadow-md transition overflow-hidden"
             >
               <div className="w-full aspect-[16/9] overflow-hidden">
-                <img src="/images/trader-stressed.jpg" alt="A stressed professional at screens, symbolizing anxious prediction loops" className="w-full h-full object-cover" />
+                <img src="/images/worry_loop.jpg" alt="A stressed woman ruminating about her worries" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold">The Loop of Anxiety: Why Your Brain Won’t Let Go (And What AI Can Teach Us About It)</h3>

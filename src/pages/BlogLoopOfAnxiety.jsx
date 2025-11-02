@@ -17,6 +17,7 @@ export default function BlogLoopOfAnxiety() {
             <img
               src="/images/worry_loop.jpg"
               alt="A stressed woman ruminating about her worries"
+              className="w-full h-auto"
             />
             <figcaption>A mind caught in predictive loops keeps scanning for what might go wrong.</figcaption>
           </figure>
@@ -51,6 +52,7 @@ export default function BlogLoopOfAnxiety() {
             <img
               src="/images/choices.jpg"
               alt="Many paths leading to different futures"
+              className="w-full h-auto"
             />
             <figcaption>Prediction under uncertainty: many possible futures, none fully resolved.</figcaption>
           </figure>
@@ -83,6 +85,7 @@ export default function BlogLoopOfAnxiety() {
             <img
               src="/images/todo-list.jpg"
               alt="Overwhelming to-do list"
+              className="w-full h-auto"
             />
             <figcaption>Unfinished tasks stick in memory — your brain keeps them active until closed.</figcaption>
           </figure>
@@ -99,6 +102,7 @@ export default function BlogLoopOfAnxiety() {
             <img
               src="/images/song-stuck-in-head.jpg"
               alt="Song stuck in head"
+              className="w-full h-auto"
             />
             <figcaption>Loops, like songs, can be soothing or intrusive — the brain seeks completion either way.</figcaption>
           </figure>

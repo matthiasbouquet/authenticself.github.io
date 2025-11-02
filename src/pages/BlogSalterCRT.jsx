@@ -17,6 +17,7 @@ export default function BlogSalterCRT() {
             <img
               src="/images/forest.jpg"
               alt="Quiet forest path suggesting new learning and conditioning"
+              className="w-full h-auto"
             />
             <figcaption>Conditioning is learning: repeat what helps, extinguish what doesn’t.</figcaption>
           </figure>
