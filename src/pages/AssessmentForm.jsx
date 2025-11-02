@@ -28,6 +28,7 @@ export default function AssessmentForm() {
   const [phq, setPhq] = useState(Array(9).fill(0));
   const [gad, setGad] = useState(Array(7).fill(0));
   const [iapt, setIapt] = useState(Array(3).fill(0));
+  const [iaptA19Details, setIaptA19Details] = useState('');
   const [meta, setMeta] = useState({ name: '', dob: '' });
   const [health, setHealth] = useState({
     heart: false,
@@ -164,6 +165,99 @@ export default function AssessmentForm() {
     window.print();
   };
 
+  const emailAssessment = () => {
+    const inputEl = document.getElementById('client-name');
+    const enteredName = (inputEl && inputEl.value) || meta.name || '';
+    const validity = validateName(enteredName);
+    const safeName = validity.ok ? enteredName.trim() : 'Client';
+    const to = 'matthias.bouquet@gmail.com';
+    const subject = encodeURIComponent(`${safeName} Assessment`);
+
+    const phScale = ['Not at all', 'Several days', 'More than half the days', 'Nearly every day'];
+
+    const lines = [];
+    lines.push('Hi Matthias,');
+    lines.push('');
+    lines.push('Assessment details below.');
+    lines.push('');
+    lines.push(`Name: ${safeName}${meta.dob ? `  |  DOB: ${meta.dob}` : ''}`);
+    lines.push('');
+
+    // Health checkboxes
+    const yesNo = (v) => (v ? 'Yes' : 'No');
+    lines.push('Health Conditions:');
+    lines.push(`- Heart problems: ${yesNo(health.heart)}`);
+    lines.push(`- Migraine or epilepsy: ${yesNo(health.migraine)}`);
+    lines.push(`- Physical pain or injury: ${yesNo(health.pain)}`);
+    lines.push(`- Specific fears or phobias: ${yesNo(health.fears)}`);
+    lines.push('');
+
+    // General questionnaire items
+    lines.push('General Questionnaire:');
+    const ynDetails = [
+      { key: 'psychological', label: 'Psychological/psychiatric condition' },
+      { key: 'gpConsulted', label: 'Consulted GP about current condition(s)' },
+      { key: 'otherConditions', label: 'Other relevant health conditions' },
+      { key: 'medications', label: 'Prescription medications' },
+      { key: 'ibs', label: 'IBS or gastro-intestinal issues' },
+      { key: 'tension', label: 'Tension in body areas' },
+      { key: 'drugs', label: 'Illegal drugs (ever)' },
+    ];
+    ynDetails.forEach(({ key, label }) => {
+      const yes = !!health[`${key}Yes`];
+      lines.push(`- ${label}: ${yes ? 'Yes' : 'No'}`);
+      if (yes) {
+        const detail = (health[key] || '').toString().trim();
+        if (detail) lines.push(`  Details: ${detail}`);
+      }
+    });
+    lines.push(`- Cigarettes per day: ${health.cigarettes || '0'}`);
+    lines.push(`- Alcohol per week (units): ${health.alcohol || '0'}`);
+    lines.push(`- Coffee per day: ${health.caffeine || '0'}`);
+    if ((health.sleep || '').toString().trim()) lines.push(`- Sleep: ${health.sleep.toString().trim()}`);
+    if ((health.exercise || '').toString().trim()) lines.push(`- Exercise: ${health.exercise.toString().trim()}`);
+    lines.push('');
+
+    // PHQ-9 full responses
+    lines.push('PHQ-9 Responses:');
+    phqItems.forEach((q, i) => {
+      const v = phq[i] ?? 0;
+      lines.push(`${i + 1}. ${q}: ${v} (${phScale[v] || ''})`);
+    });
+    lines.push(`Total: ${phqScore.total} — ${phqScore.severity}`);
+    lines.push('');
+
+    // GAD-7 full responses
+    lines.push('GAD-7 Responses:');
+    gadItems.forEach((q, i) => {
+      const v = gad[i] ?? 0;
+      lines.push(`${i + 1}. ${q}: ${v} (${phScale[v] || ''})`);
+    });
+    lines.push(`Total: ${gadScore.total} — ${gadScore.severity}`);
+    lines.push('');
+
+    // IAPT responses
+    const iaptQs = [
+      'A17 — Social situations due to fear of embarrassment',
+      'A18 — Fear of panic attack or distressing symptoms',
+      'A19 — Fear of particular objects, animals, or activities',
+    ];
+    lines.push('IAPT Phobia Scales:');
+    iaptQs.forEach((q, i) => {
+      const v = iapt[i] ?? 0;
+      lines.push(`${q}: ${v} (${iaptLabel(v)})`);
+      if (i === 2 && v > 0) {
+        const detail = (iaptA19Details || '').toString().trim();
+        if (detail) lines.push(`  A19 details: ${detail}`);
+      }
+    });
+    lines.push('');
+    lines.push('End of assessment.');
+
+    const body = encodeURIComponent(lines.join('\n'));
+    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+  };
+
   const ToggleSection = ({ id, title, children }) => (
     <div className="border rounded-lg mb-4 overflow-hidden">
       <button
@@ -187,6 +281,8 @@ export default function AssessmentForm() {
       setOpen(prev => ({ ...prev, health: true }));
     }
   }, [meta]);
+
+  
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white rounded-2xl shadow">
@@ -265,7 +361,7 @@ export default function AssessmentForm() {
             ) : ['sleep','exercise'].includes(key) ? (
               <>
                 <label className="block text-sm font-medium mb-1">{label}</label>
-                <textarea defaultValue={health[key]} onBlur={e=>handleHealthChange(key,e.target.value)} maxLength={100} className="w-full border rounded-md p-2 text-sm" rows={2}></textarea>
+                <textarea defaultValue={health[key]} onBlur={e=>handleHealthChange(key,e.target.value)} maxLength={250} className="w-full border rounded-md p-2 text-sm" rows={2}></textarea>
               </>
             ) : (
               <>
@@ -281,7 +377,7 @@ export default function AssessmentForm() {
                   </div>
                 </div>
                 {health[`${key}Yes`] && (
-                  <textarea defaultValue={health[key]} onBlur={e=>handleHealthChange(key,e.target.value)} maxLength={100} className="w-full border rounded-md p-2 text-sm" rows={2}></textarea>
+                  <textarea defaultValue={health[key]} onBlur={e=>handleHealthChange(key,e.target.value)} maxLength={250} className="w-full border rounded-md p-2 text-sm" rows={2}></textarea>
                 )}
               </>
             )}
@@ -291,7 +387,7 @@ export default function AssessmentForm() {
       </ToggleSection>
 
       {/* PHQ-9 Section */}
-      <ToggleSection id="phq" title="Personal Health Questionnaire-9 (PHQ-9)">
+      <ToggleSection id="phq" title="Personal Health Questionnaire (PHQ-9)">
         <p className="text-sm text-gray-600 mb-2">Over the last 2 weeks, how often have you been bothered by any
         of the following problems?.</p>
         <div className="mb-2 text-xs text-gray-600">
@@ -311,14 +407,11 @@ export default function AssessmentForm() {
           </div>
         ))}
         <div className="mt-2 p-3 bg-gray-50 rounded text-sm">PHQ-9 total: <strong>{phqScore.total}</strong> — {phqScore.severity}</div>
-        <div className="mt-3 text-sm">
-          <p className="font-semibold">Declaration</p>
-          <p>The information given above and throughout this consultation is, to the best of my knowledge, full and correct.</p>
-        </div>
+
       </ToggleSection>
 
       {/* GAD-7 Section */}
-      <ToggleSection id="gad" title="Generalized Anxiety Disorder-7 (GAD-7)">
+      <ToggleSection id="gad" title="Generalized Anxiety Disorder (GAD-7)">
         <p className="text-sm text-gray-600 mb-2">Over the last 2 weeks, how often have you been bothered by any
         of the following problems?.</p>
         <div className="mb-2 text-xs text-gray-600">
@@ -341,13 +434,13 @@ export default function AssessmentForm() {
       </ToggleSection>
 
       {/* IAPT Section */}
-      <ToggleSection id="iapt" title="IAPT Phobia Scales">
+      <ToggleSection id="iapt" title="(IAPT) Phobia Scales">
         <p className="text-sm text-gray-600 mb-2">How much would you avoid the following situations?</p>
         <div className="mb-2 text-xs text-gray-600">
           <p className="font-medium">Scale:</p>
           <p>0: would not avoid it · 8: would absolutely avoid it</p>
         </div>
-        {[ 'A17 — Social situations due to fear of embarrassment', 'A18 — Fear of panic attack or distressing symptoms', 'A19 — Fear of particular objects or activities' ].map((q, i) => (
+        {[ 'A17 — Social situations due to fear of embarrassment', 'A18 — Fear of panic attack or distressing symptoms', 'A19 — Fear of particular objects, animals, or activities' ].map((q, i) => (
           <div key={i} className="border-b border-gray-100 py-3 text-sm">
             <div className="mb-2"><span>{q}</span></div>
             <div className="flex flex-col md:flex-row md:items-center md:gap-4">
@@ -367,6 +460,19 @@ export default function AssessmentForm() {
               </div>
               <div className="mt-2 md:mt-0 text-xs text-gray-700">— {iaptLabel(iapt[i])}</div>
             </div>
+            {i === 2 && iapt[i] > 0 && (
+              <div className="mt-3">
+                <label className="block text-sm font-medium mb-1">Please specify</label>
+                <textarea
+                  defaultValue={iaptA19Details}
+                  onBlur={e => setIaptA19Details(e.target.value)}
+                  maxLength={250}
+                  rows={2}
+                  className="w-full border rounded-md p-2 text-sm"
+                  placeholder="Describe the object(s), animal(s), or activity(ies) you avoid"
+                ></textarea>
+              </div>
+            )}
           </div>
         ))}
       </ToggleSection>
@@ -388,6 +494,7 @@ export default function AssessmentForm() {
 
       <div className="flex gap-3">
         <button type="button" onClick={downloadPDF} className="bg-teal-500 hover:bg-teal-600 text-white px-4 py-2 rounded-md text-sm">Download PDF</button>
+        <button type="button" onClick={emailAssessment} className="bg-indigo-500 hover:bg-indigo-600 text-white px-4 py-2 rounded-md text-sm">Send by Email</button>
       </div>
 
       <p className="text-xs text-gray-400 mt-4">Note: This form is for screening only. Seek professional assessment if symptoms are moderate or severe.</p>
