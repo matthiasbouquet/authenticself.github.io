@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { CALENDLY_URL } from "../constants";
 
 export function Booking() {
@@ -19,6 +20,11 @@ export function Booking() {
             <li>• Please discuss your chronic health conditions with your doctor before starting hypnotherapy</li>
             <li>• Available in English and French</li>
           </ul>
+
+          <p className="mt-4 text-sm text-gray-700">
+            Before your call, please complete the confidential
+            {' '}<Link to="/assessment" className="underline text-indigo-700 hover:text-indigo-900">assessment</Link>.
+          </p>
         </div>
 
         <div className="bg-white rounded-2xl shadow p-4">

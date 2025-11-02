@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function AssessmentForm() {
   const phqItems = [
@@ -189,6 +190,9 @@ export default function AssessmentForm() {
 
   return (
     <div className="max-w-3xl mx-auto p-6 bg-white rounded-2xl shadow">
+      <div className="mb-4">
+        <Link to="/" className="text-sm text-indigo-700 hover:text-indigo-900 underline">← Home</Link>
+      </div>
       <h1 className="text-2xl font-semibold mb-2">Comprehensive Health & Psychological Assessment</h1>
       <p className="text-sm font-semibold text-gray-700 mb-4">Private and Confidential</p>
       <p className="text-gray-500 mb-6 text-sm">Complete the following sections. Scores and information are stored securely and may aid assessment.</p>
