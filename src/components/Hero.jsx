@@ -115,7 +115,7 @@ export function Hero() {
               </a>
             </div>
 
-            <p className="mt-6 text-sm text-gray-600">Matthias Bouquet, PhD — Student Trainee at the UK College of Hypnosis & Hypnotherapy.</p>
+            <p className="mt-6 text-sm text-gray-600">Matthias Bouquet, PhD — Trainee Hypnotherapist at the UK College of Hypnosis & Hypnotherapy.</p>
           </motion.div>
 
           

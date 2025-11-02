@@ -17,8 +17,7 @@ export function Booking() {
             <li>• We'll discuss your goals, whether hypnotherapy is likely to help, and the best next steps</li>
             <li>• Confidential and flexible appointments available in the evenings and weekends</li>
             <li>• Please discuss your chronic health conditions with your doctor before starting hypnotherapy</li>
-            <li>• Available in English, French, and Spanish</li>
-            <li>• Note that I am in training and this is not a registered practice</li>
+            <li>• Available in English and French</li>
           </ul>
         </div>
 

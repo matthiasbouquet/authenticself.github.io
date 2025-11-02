@@ -129,6 +129,15 @@ export default function AssessmentForm() {
     return 'always avoid it';
   };
 
+  const validateName = (value) => {
+    const name = (value || '').trim();
+    if (!name) return { ok: false, message: 'Name is required.' };
+    if (/[0-9]/.test(name) || /[^a-zA-Z\-\'\s]/.test(name)) {
+      return { ok: false, message: "Name must contain only letters, spaces, apostrophes, or hyphens." };
+    }
+    return { ok: true };
+  };
+
   const downloadPDF = () => {
     if (!health.declarationAccepted) {
       alert('Please confirm the Declaration before continuing.');
@@ -136,8 +145,14 @@ export default function AssessmentForm() {
     }
     const prevTitle = document.title;
     const inputEl = document.getElementById('client-name');
-    const enteredName = (inputEl && inputEl.value) || meta.name || 'Client';
-    const safeName = enteredName.replace(/[\\/:*?"<>|]+/g, ' ').trim() || 'Client';
+    const enteredName = (inputEl && inputEl.value) || meta.name || '';
+    const validity = validateName(enteredName);
+    if (!validity.ok) {
+      alert(validity.message);
+      if (inputEl) inputEl.focus();
+      return;
+    }
+    const safeName = enteredName.replace(/[\\/:*?"<>|]+/g, ' ').trim();
     const desired = `${safeName} Assessment`;
     document.title = desired;
     const restore = () => {
@@ -180,8 +195,19 @@ export default function AssessmentForm() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
         <div>
-          <label className="block text-sm font-medium">Name</label>
-          <input id="client-name" name="client-name" type="text" defaultValue={meta.name} onBlur={e=>setMeta({...meta,name:e.target.value})} className="w-full border rounded-md p-2" />
+          <label className="block text-sm font-medium">Name <span className="text-red-600">*</span></label>
+          <input
+            id="client-name"
+            name="client-name"
+            type="text"
+            defaultValue={meta.name}
+            onBlur={e=>setMeta({...meta,name:e.target.value})}
+            className="w-full border rounded-md p-2"
+            aria-required="true"
+            inputMode="text"
+            pattern="[A-Za-z\-\'\s]+"
+            placeholder="e.g., Jane Doe"
+          />
         </div>
         <div>
           <label className="block text-sm font-medium">Date of birth</label>
@@ -350,7 +376,7 @@ export default function AssessmentForm() {
             className="mt-0.5"
           />
           <span>
-            <span className="font-semibold">Declaration</span><br />
+            <span className="font-semibold">Declaration <span className="text-red-600">*</span></span><br />
             The information given above and throughout this consultation is, to the best of my knowledge, full and correct.
           </span>
         </label>
