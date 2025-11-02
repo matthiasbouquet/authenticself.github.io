@@ -15,8 +15,8 @@ export default function BlogLoopOfAnxiety() {
 
           <figure>
             <img
-              src="/images/trader-stressed.jpg"
-              alt="A stressed professional staring at screens, illustrating anxious prediction loops"
+              src="/images/worry_loop.jpg"
+              alt="A stressed woman ruminating about her worries"
             />
             <figcaption>A mind caught in predictive loops keeps scanning for what might go wrong.</figcaption>
           </figure>
@@ -49,8 +49,8 @@ export default function BlogLoopOfAnxiety() {
 
           <figure>
             <img
-              src="/images/translucid-sphere.jpg"
-              alt="Abstract translucent spheres representing uncertain possibilities and predictions"
+              src="/images/choices.jpg"
+              alt="Many paths leading to different futures"
             />
             <figcaption>Prediction under uncertainty: many possible futures, none fully resolved.</figcaption>
           </figure>
@@ -81,8 +81,8 @@ export default function BlogLoopOfAnxiety() {
 
           <figure>
             <img
-              src="/images/procrastination.jpg"
-              alt="A desk with many unfinished tasks, symbolizing the Zeigarnik effect"
+              src="/images/todo-list.jpg"
+              alt="Overwhelming to-do list"
             />
             <figcaption>Unfinished tasks stick in memory — your brain keeps them active until closed.</figcaption>
           </figure>
@@ -97,10 +97,10 @@ export default function BlogLoopOfAnxiety() {
 
           <figure>
             <img
-              src="/images/nightsky.jpg"
-              alt="Night sky with subtle patterns, evoking repetitive loops like earworms"
+              src="/images/song-stuck-in-head.jpg"
+              alt="Song stuck in head"
             />
-            <figcaption>Loops can be soothing or intrusive — the brain seeks completion either way.</figcaption>
+            <figcaption>Loops, like songs, can be soothing or intrusive — the brain seeks completion either way.</figcaption>
           </figure>
         </article>
       </main>
