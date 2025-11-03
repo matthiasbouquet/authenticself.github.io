@@ -37,7 +37,7 @@ export default function LandingPage() {
               className="block rounded-2xl bg-white shadow hover:shadow-md transition overflow-hidden"
             >
               <div className="w-full aspect-[16/9] overflow-hidden">
-                <img src="/images/forest.jpg" alt="Forest path suggesting new learning and conditioning" className="w-full h-full object-cover" />
+                <img src="/images/mask.jpg" alt="Dropping the mask of social conditioning" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold">Conditioned Reflex Therapy by Andrew Salter — A Practitioner’s Review</h3>
