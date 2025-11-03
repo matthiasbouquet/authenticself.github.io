@@ -4,18 +4,18 @@ export const areas = [
     image:
       "/images/trader-stressed.jpg?auto=format&fit=crop&w=1400&q=80",
     copy:
-      "Reduce hypervigilance, recover calm in high-pressure environments, and improve decision-making.",
+      "Reduce hypervigilance, rumination and worry. Recover calm in high-pressure environments and quality of sleep. Improve decision-making.",
     quote:
-      "You can't stop the waves, but you can learn to surf. — Jon Kabat‑Zinn",
+      "Within you, there is a stillness and a sanctuary to which you can retreat at any time and be yourself. — Hermann Hesse",
   },
   {
-    title: "Sleep & Pain Management",
+    title: "Addiction & Habit Reversal",
     image:
-      "/images/sleeping.jpg?auto=format&fit=crop&w=1400&q=80",
+      "/images/nail-biting.jpg?auto=format&fit=crop&w=1400&q=80",
     copy:
-      "Guided hypnotherapy to regulate the nervous system, re-train sleep patterns and reduce the experience of chronic pain.",
+      "Guided hypnotherapy to reduce the experience of addiction and unhealthy habits.",
     quote:
-      "Rest is not idle; it is the groundwork for clarity.",
+      "Discipline is choosing between what you want now and what you want most.",
   },
   {
     title: "Procrastination & Performance",
@@ -51,6 +51,6 @@ export const areas = [
     copy:
       "Learn to be present in the moment, reduce rumination and worry, for a more balanced and fulfilling life.",
     quote:
-      "Wherever you go, there you are. — Jon Kabat‑Zinn",
+      "Between stimulus and response there is a space. In that space is our power to choose our response. In our response lies our growth and our freedom. — Victor Frankl",
   },
 ];
