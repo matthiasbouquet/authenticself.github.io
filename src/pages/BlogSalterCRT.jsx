@@ -25,7 +25,16 @@ export default function BlogSalterCRT() {
             This is a book that didn&apos;t just walk— it charged! — into the world of psychotherapy. Published in 1949, <strong>Andrew Salter&apos;s <em>Conditioned Reflex Therapy: The Direct Approach to the Reconstruction of the Personality</em></strong> is more than a classic; it&apos;s a defiant roar against the idea that emotional freedom is a decade-long excavation project. Salter says: <strong>Stop digging, start acting!</strong>
           </p>
 
-          <h2>Pavlov in Manhattan: The Core Idea</h2>
+          <hr />
+          <h2><strong>Table of Contents</strong></h2>
+          <ol>
+            <li>📚 <a href="#core-idea">Pavlov in Manhattan: The Core Idea</a></li>
+            <li>🛠️ <a href="#six-techniques">The Action Plan: Salter&apos;s Six Techniques</a></li>
+            <li>🛡️ <a href="#psychoanalysis-critique">A Man with a Mace: The Critique of Psychoanalysis</a></li>
+            <li>✅ <a href="#final-verdict">Final Verdict: A Timeless Call to Action</a></li>
+          </ol>
+
+          <h2 id="core-idea">1. Pavlov in Manhattan: The Core Idea</h2>
 
           <p>Forget the couch and the endless contemplation of your childhood. Salter brings the hard-hitting science of <strong>Ivan Pavlov&apos;s conditioned reflexes</strong>—yes, the one with the salivating dogs—straight into the clinic. His core premise is beautifully, radically simple:</p>
 
@@ -37,7 +46,7 @@ export default function BlogSalterCRT() {
 
           <hr />
 
-          <h2>The Action Plan: Salter&apos;s Six Techniques</h2>
+          <h2 id="six-techniques">2. The Action Plan: Salter&apos;s Six Techniques</h2>
 
           <p>Salter&apos;s methods, which laid the foundation for modern <strong>Behavior Therapy</strong> and <strong>Cognitive Behavioral Therapy (CBT)</strong>, are surprisingly direct and still potent today. He essentially prescribes a training regimen to build up your emotional &quot;muscle.&quot;</p>
 
@@ -66,11 +75,11 @@ export default function BlogSalterCRT() {
 
           <hr />
 
-          <h2>A Man with a Mace: The Critique of Psychoanalysis</h2>
+          <h2 id="psychoanalysis-critique">3. A Man with a Mace: The Critique of Psychoanalysis</h2>
           <p>Salter wasn&apos;t just a therapist; he was a revolutionary. Much of the book is dedicated to a blistering, witty, and often savage critique of <strong>Psychoanalysis</strong>, which was the dominant school of thought at the time.</p>
           <p>He argued that Freudian therapy was <strong>too long, too vague, and often ineffective</strong> because it focused on <em>insight</em> rather than <em>action</em>. Asking &quot;Why do I feel this way?&quot; is less productive, in Salter&apos;s view, than simply changing the way you <em>act</em>. For Salter, the path to a &quot;reconstructed personality&quot; isn&apos;t a historical dig—it&apos;s a high-speed construction project.</p>
 
-          <h2>Final Verdict: A Timeless Call to Action</h2>
+          <h2 id="final-verdict">4. Final Verdict: A Timeless Call to Action</h2>
           <p>While some of Salter&apos;s philosophy can feel a touch too <strong>mechanistic</strong> for modern sensibilities (he famously wrote, &quot;He remains an automaton, but now he is a happy one&quot;), the book&apos;s value is undeniable. Lauded by figures like <strong>Aldous Huxley</strong>, <em>Conditioned Reflex Therapy</em> is a foundational text that successfully pivoted psychotherapy from passive analysis to active change.</p>
           <p>It teaches you to stop being a &quot;receiver&quot; of life&apos;s experiences and become an <strong>&quot;emotional broadcaster.&quot;</strong> It’s a compelling, direct, and often humorous book that reminds us that happiness isn&apos;t a state of being you <em>find</em>, but a pattern of behavior you <strong>condition</strong>. If you feel inhibited, shy, or simply stuck, this book is your blueprint for breaking out and unleashing the confident, expressive person you were meant to be. It&apos;s time to get the steam out!</p>
 
