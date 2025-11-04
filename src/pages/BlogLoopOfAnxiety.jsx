@@ -35,13 +35,13 @@ export default function BlogLoopOfAnxiety() {
           <ol>
             <li>🧠 <a href="#anxiety-prediction">Anxiety Isn't Fear — It's Prediction</a></li>
             <li>🔄 <a href="#unfinished-thoughts">Why Your Brain Hates Unfinished Thoughts</a></li>
-            <li>🎵 <a href="#earworms">The "Earworm Effect" — When Thoughts Get Stuck</a></li>
             <li>🤖 <a href="#ai-loops">What AI Can Teach Us About Mental Loops</a></li>
             <li>✂️ <a href="#break-loop">How to Break the Loop</a></li>
+            <li>🎵 <a href="#earworms">The "Earworm Effect" — When Thoughts Get Stuck</a></li>
             <li>💭 <a href="#conclusion">Final Thoughts</a></li>
           </ol>
 
-          <h2>1. Anxiety Isn’t Fear — It’s Prediction</h2>
+          <h2 id="anxiety-prediction">1. Anxiety Isn’t Fear — It’s Prediction</h2>
 
           <p>Fear is simple. You see danger, your body reacts, and the moment passes.</p>
 
@@ -74,7 +74,7 @@ export default function BlogLoopOfAnxiety() {
 
           <hr />
 
-          <h2>2. Why Your Brain Hates Unfinished Thoughts</h2>
+          <h2 id="unfinished-thoughts">2. Why Your Brain Hates Unfinished Thoughts</h2>
 
           <p>In the 1920s, psychologist <strong>Bluma Zeigarnik</strong> noticed something strange. Waiters in a café could remember unpaid orders perfectly — but once the bill was paid, they forgot immediately.</p>
 
@@ -101,7 +101,7 @@ export default function BlogLoopOfAnxiety() {
 
           <hr />
 
-          <h2>Why AI Models Don't Ruminate</h2>
+          <h2 id="ai-loops">3. What AI Can Teach Us About Mental Loops</h2>
 
           <p>Here's something fascinating: <strong>deep learning models don't worry</strong>.</p>
 
@@ -129,7 +129,28 @@ export default function BlogLoopOfAnxiety() {
 
           <hr />
 
-          <h2>3. The Song Stuck in Your Head — and the Worry That Won’t Go Away</h2>
+          <h2 id="break-loop">4. How to Break the Loop</h2>
+
+          <p>
+            To stop the loop of negative thoughts and feelings, combine a few proven
+            methods. Wolpe’s <strong>thought stopping</strong> trains a quick interrupt:
+            notice the rumination, firmly say “stop” (internally or aloud), and
+            immediately shift to a pre‑chosen cue, then <em>replace</em> the thought with
+            a grounded action (for example, a 5‑4‑3‑2‑1 sensory scan or a concise coping
+            statement that is meaningful to you). <strong>Mindfulness</strong> builds decentering (removing yourself from the thought): label “a worry is
+            present,” let it be, and return attention to breath or body—loops lose fuel
+            when you stop arguing with them. <strong>CBT</strong> helps you name the
+            distortion, test the prediction, and install a more accurate belief through
+            behavioral experiments. In <strong>hypnosis</strong>, these skills can be
+            rehearsed vividly and installed as automatic responses, so the interrupt and
+            re‑focus happen faster when you need them. You can also train yourself in self-hypnosis to install these skills as automatic responses.
+          </p>
+
+          <p>
+            Want help tailoring this for your situation? <a href="/#book" className="underline text-indigo-700 hover:text-indigo-900">Book a free call</a> and we’ll map out a plan.
+          </p>
+
+          <h2 id="earworms">5. The "Earworm Effect" — When Thoughts Get Stuck</h2>
 
           <p>You know when a song gets stuck in your head? That’s called an <em>earworm</em> — and it happens for a similar reason.</p>
 

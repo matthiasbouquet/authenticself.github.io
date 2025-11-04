@@ -54,7 +54,7 @@ export default function LandingPage() {
                 <img src="/images/mask.jpg" alt="Dropping the mask of social conditioning" className="w-full h-full object-cover" />
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-semibold">Conditioned Reflex Therapy by Andrew Salter — A Practitioner’s Review</h3>
+                <h3 className="text-xl font-semibold">Break the Mask of Social Conditioning: Less People-Pleasing, More Self-Expression</h3>
                 <p className="mt-2 text-gray-700">Estimated reading time: 7–9 minutes</p>
                 <p className="mt-3 text-indigo-700 font-medium">Read article →</p>
               </div>
