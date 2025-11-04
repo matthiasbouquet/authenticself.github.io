@@ -17,20 +17,29 @@ export default function BlogLoopOfAnxiety() {
             <img
               src="/images/worry_loop.jpg"
               alt="A stressed woman ruminating about her worries"
-              className="w-full h-auto"
+              className="w-full max-w-lg mx-auto h-auto"
             />
             <figcaption>A mind caught in predictive loops keeps scanning for what might go wrong.</figcaption>
           </figure>
 
-          <p>Have you ever had a thought that just won’t leave you alone?</p>
+          <p>Have you ever had a thought or feeling that just won’t leave you alone?</p>
 
-          <p>You’re trying to relax, maybe scroll your phone or fall asleep — but your mind keeps replaying the same worry on loop. Something you said. Something that might go wrong. Something you <em>can’t quite solve.</em></p>
+          <p>You’re trying to relax, fall asleep, or try to concentrate on work — but your mind keeps replaying the same worry on loop. Something you said. Something that might go wrong. Something you <em>can’t quite solve.</em></p>
 
           <p>That’s not weakness or “overthinking.” It’s actually a built-in feature of your brain — a kind of <strong>mental loop</strong> designed to keep you safe. But when that loop gets stuck, we call it <em>anxiety.</em></p>
 
-          <p>In this post, we’ll unpack how anxiety actually works in the brain, why your mind holds onto unfinished thoughts, what it has in common with songs that get stuck in your head — and even how <strong>AI tools</strong> can help us understand why we worry.</p>
+          <p>In this post, we’ll unpack how anxiety actually works in the brain, why your mind holds onto unfinished thoughts, what it has in common with songs that get stuck in your head — and even how <strong>AI tools</strong> can help us understand why we worry, and how to stop the cycle.</p>
 
           <hr />
+          <h2><strong>Table of Contents</strong></h2>
+          <ol>
+            <li>🧠 <a href="#anxiety-prediction">Anxiety Isn't Fear — It's Prediction</a></li>
+            <li>🔄 <a href="#unfinished-thoughts">Why Your Brain Hates Unfinished Thoughts</a></li>
+            <li>🎵 <a href="#earworms">The "Earworm Effect" — When Thoughts Get Stuck</a></li>
+            <li>🤖 <a href="#ai-loops">What AI Can Teach Us About Mental Loops</a></li>
+            <li>✂️ <a href="#break-loop">How to Break the Loop</a></li>
+            <li>💭 <a href="#conclusion">Final Thoughts</a></li>
+          </ol>
 
           <h2>1. Anxiety Isn’t Fear — It’s Prediction</h2>
 
@@ -52,7 +61,7 @@ export default function BlogLoopOfAnxiety() {
             <img
               src="/images/choices.jpg"
               alt="Many paths leading to different futures"
-              className="w-full h-auto"
+              className="w-full max-w-lg mx-auto h-auto"
             />
             <figcaption>Prediction under uncertainty: many possible futures, none fully resolved.</figcaption>
           </figure>
@@ -85,10 +94,38 @@ export default function BlogLoopOfAnxiety() {
             <img
               src="/images/todo-list.jpg"
               alt="Overwhelming to-do list"
-              className="w-full h-auto"
+              className="w-full max-w-lg mx-auto h-auto"
             />
             <figcaption>Unfinished tasks stick in memory — your brain keeps them active until closed.</figcaption>
           </figure>
+
+          <hr />
+
+          <h2>Why AI Models Don't Ruminate</h2>
+
+          <p>Here's something fascinating: <strong>deep learning models don't worry</strong>.</p>
+
+          <p>Not because they're emotionless (though they are), but because they've already explored <em>every possible scenario</em> during training.</p>
+
+          <p>When a neural network learns, it doesn't just see one outcome — it processes millions of variations. Every "what if?" has already been computed, weighted, and integrated into its understanding. Good outcomes, bad outcomes, edge cases, catastrophes — all of them.</p>
+
+          <p>By the time the model is deployed, there are <strong>no unfinished loops</strong>. No open tabs. No lingering questions.</p>
+
+          <p>For humans, worrying is often the <strong>failure to follow through</strong> with the actual feared scenario. We ask "What if I fail?" but we don't mentally simulate the full experience — we just loop on the question itself.</p>
+
+          <blockquote>
+            <p>"What if I lose my job? What if they reject me? What if it all goes wrong?"</p>
+          </blockquote>
+
+          <p>We never finish the thought. We never walk through what would <em>actually</em> happen next, how we'd respond, or how we'd adapt. The loop stays open because we're afraid to close it.</p>
+
+          <p>AI models, on the other hand, have no such fear. They've already run every "what if?" scenario — thousands of times over. They've seen failure, success, and everything in between. That's why they don't ruminate.</p>
+
+          <p>The lesson? <strong>Completion is the antidote to rumination.</strong></p>
+
+          <p>When you catch yourself in a worry loop, try this: don't just ask "What if?" — <em>answer it</em>. Walk through the scenario. What would you actually do? How would you cope? What's the realistic worst case, and what's your plan?</p>
+
+          <p>By finishing the thought, you close the loop. And just like that, your brain can finally let it go.</p>
 
           <hr />
 
@@ -102,7 +139,7 @@ export default function BlogLoopOfAnxiety() {
             <img
               src="/images/song-stuck-in-head.jpg"
               alt="Song stuck in head"
-              className="w-full h-auto"
+              className="w-full max-w-lg mx-auto h-auto"
             />
             <figcaption>Loops, like songs, can be soothing or intrusive — the brain seeks completion either way.</figcaption>
           </figure>
@@ -112,5 +149,3 @@ export default function BlogLoopOfAnxiety() {
     </div>
   );
 }
-
-

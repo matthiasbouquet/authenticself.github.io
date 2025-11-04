@@ -33,20 +33,6 @@ export default function LandingPage() {
           <h2 className="text-2xl font-bold">Blog</h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
             <Link
-              to="/blog/conditioned-reflex-therapy-andrew-salter-review"
-              className="block rounded-2xl bg-white shadow hover:shadow-md transition overflow-hidden"
-            >
-              <div className="w-full aspect-[16/9] overflow-hidden">
-                <img src="/images/mask.jpg" alt="Dropping the mask of social conditioning" className="w-full h-full object-cover" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold">Conditioned Reflex Therapy by Andrew Salter — A Practitioner’s Review</h3>
-                <p className="mt-2 text-gray-700">Estimated reading time: 7–9 minutes</p>
-                <p className="mt-3 text-indigo-700 font-medium">Read article →</p>
-              </div>
-            </Link>
-
-            <Link
               to="/blog/the-loop-of-anxiety"
               className="block rounded-2xl bg-white shadow hover:shadow-md transition overflow-hidden"
             >
@@ -56,6 +42,20 @@ export default function LandingPage() {
               <div className="p-6">
                 <h3 className="text-xl font-semibold">The Loop of Anxiety: Why Your Brain Won’t Let Go (And What AI Can Teach Us About It)</h3>
                 <p className="mt-2 text-gray-700">Estimated reading time: 9–10 minutes</p>
+                <p className="mt-3 text-indigo-700 font-medium">Read article →</p>
+              </div>
+            </Link>
+
+            <Link
+              to="/blog/conditioned-reflex-therapy-andrew-salter-review"
+              className="block rounded-2xl bg-white shadow hover:shadow-md transition overflow-hidden"
+            >
+              <div className="w-full aspect-[16/9] overflow-hidden">
+                <img src="/images/mask.jpg" alt="Dropping the mask of social conditioning" className="w-full h-full object-cover" />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold">Conditioned Reflex Therapy by Andrew Salter — A Practitioner’s Review</h3>
+                <p className="mt-2 text-gray-700">Estimated reading time: 7–9 minutes</p>
                 <p className="mt-3 text-indigo-700 font-medium">Read article →</p>
               </div>
             </Link>

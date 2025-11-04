@@ -6,15 +6,6 @@ import { Link } from "react-router-dom";
 export default function BlogIndex() {
   const posts = [
     {
-      path: "/blog/conditioned-reflex-therapy-andrew-salter-review",
-      title: "Conditioned Reflex Therapy by Andrew Salter — A Practitioner’s Review",
-      readingTime: "7–9 minutes",
-      excerpt:
-        "CRT’s behavioral toolkit: excitation vs inhibition, counter‑conditioning, and practical rehearsal.",
-      coverImage: "/images/forest.jpg",
-      coverAlt: "Forest path suggesting new learning and conditioning",
-    },
-    {
       path: "/blog/the-loop-of-anxiety",
       title: "The Loop of Anxiety: Why Your Brain Won’t Let Go (And What AI Can Teach Us About It)",
       readingTime: "9–10 minutes",
@@ -22,6 +13,15 @@ export default function BlogIndex() {
         "Why your brain clings to unfinished worries, how prediction fuels anxiety, and what the Zeigarnik effect has to do with earworms.",
       coverImage: "/images/trader-stressed.jpg",
       coverAlt: "A stressed professional at screens, symbolizing anxious prediction loops",
+    },
+    {
+      path: "/blog/conditioned-reflex-therapy-andrew-salter-review",
+      title: "Conditioned Reflex Therapy by Andrew Salter — A Practitioner’s Review",
+      readingTime: "7–9 minutes",
+      excerpt:
+        "CRT’s behavioral toolkit: excitation vs inhibition, counter‑conditioning, and practical rehearsal.",
+      coverImage: "/images/forest.jpg",
+      coverAlt: "Forest path suggesting new learning and conditioning",
     },
   ];
 
