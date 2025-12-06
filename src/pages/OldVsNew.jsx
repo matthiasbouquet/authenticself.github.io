@@ -7,15 +7,15 @@ export default function OldVsNew() {
   const [email, setEmail] = useState("");
   const [presentingIssue, setPresentingIssue] = useState("");
 
-  // BASIC-ID inspired sections: Behavior, Affect, Sensation, Imagery, Cognition
+  // BASIC-ID inspired sections: Behavior, Affect, Sensation, Inter-personal, Cognition
   const [oldBehavior, setOldBehavior] = useState("");
   const [newBehavior, setNewBehavior] = useState("");
   const [oldAffect, setOldAffect] = useState("");
   const [newAffect, setNewAffect] = useState("");
   const [oldSensation, setOldSensation] = useState("");
   const [newSensation, setNewSensation] = useState("");
-  const [oldImagery, setOldImagery] = useState("");
-  const [newImagery, setNewImagery] = useState("");
+  const [oldInterpersonal, setOldInterpersonal] = useState("");
+  const [newInterpersonal, setNewInterpersonal] = useState("");
   const [oldCognition, setOldCognition] = useState("");
   const [newCognition, setNewCognition] = useState("");
 
@@ -46,9 +46,9 @@ export default function OldVsNew() {
       oldSensation ? `Old:\n${oldSensation}` : "Old:\n",
       newSensation ? `New:\n${newSensation}` : "New:\n",
       "",
-      "Imagery (Mental Pictures)",
-      oldImagery ? `Old:\n${oldImagery}` : "Old:\n",
-      newImagery ? `New:\n${newImagery}` : "New:\n",
+      "Inter-personal (Relationships)",
+      oldInterpersonal ? `Old:\n${oldInterpersonal}` : "Old:\n",
+      newInterpersonal ? `New:\n${newInterpersonal}` : "New:\n",
       "",
       "Cognition (Thoughts/Beliefs)",
       oldCognition ? `Old:\n${oldCognition}` : "Old:\n",
@@ -73,8 +73,8 @@ export default function OldVsNew() {
     newAffect,
     oldSensation,
     newSensation,
-    oldImagery,
-    newImagery,
+    oldInterpersonal,
+    newInterpersonal,
     oldCognition,
     newCognition,
     triggers,
@@ -174,11 +174,11 @@ export default function OldVsNew() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700">Old</label>
-                  <textarea value={oldImagery} onChange={(e) => setOldImagery(e.target.value)} className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-3 min-h-[120px]" placeholder="Catastrophes, worst-case, self-judgment, etc." />
+                  <textarea value={oldInterpersonal} onChange={(e) => setOldInterpersonal(e.target.value)} className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-3 min-h-[120px]" placeholder="Fear of judgment, people-pleasing, isolation, conflict avoidance, low assertiveness" />
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700">New</label>
-                  <textarea value={newImagery} onChange={(e) => setNewImagery(e.target.value)} className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-3 min-h-[120px]" placeholder="Success scenes, coping images, compassionate perspectives" />
+                  <textarea value={newInterpersonal} onChange={(e) => setNewInterpersonal(e.target.value)} className="mt-1 w-full rounded-lg border border-gray-300 px-3 py-3 min-h-[120px]" placeholder="Healthy boundaries, assertiveness, belonging, worthy-of-love beliefs, honest communication" />
                 </div>
               </div>
             </div>
