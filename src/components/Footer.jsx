@@ -40,7 +40,7 @@ export function Footer() {
           <span>YouTube</span>
         </a>
       </div>
-      <p>© {new Date().getFullYear()} Matthias Bouquet, PhD — Trainee Hypnotherapist</p>
+      <p>© {new Date().getFullYear()} Matthias Bouquet, PhD — Hypnotherapist</p>
     </footer>
   );
 }

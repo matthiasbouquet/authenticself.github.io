@@ -5,6 +5,7 @@ import BlogLoopOfAnxiety from "./pages/BlogLoopOfAnxiety";
 import BlogIndex from "./pages/BlogIndex";
 import BlogSalterCRT from "./pages/BlogSalterCRT";
 import AssessmentForm from "./pages/AssessmentForm";
+import OldVsNew from "./pages/OldVsNew";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <Route path="/blog/conditioned-reflex-therapy-andrew-salter-review" element={<BlogSalterCRT />} />
       <Route path="/blog" element={<BlogIndex />} />
       <Route path="/assessment" element={<AssessmentForm />} />
+      <Route path="/old-vs-new" element={<OldVsNew />} />
       <Route path="*" element={<Navigate to="/" replace />} />
     </Routes>
   );
