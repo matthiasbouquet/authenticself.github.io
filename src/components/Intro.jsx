@@ -5,7 +5,7 @@ export function Intro() {
     <section id="learn" className="bg-white rounded-3xl shadow-xl p-6 md:p-12">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
         <div className="md:col-span-2">
-          <h2 className="text-2xl md:text-3xl font-bold">Evidence-based hypnotherapy for real identity changes</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">I help busy professionals reduce anxiety, overcome procrastination, and perform under pressure using evidence-based hypnotherapy.</h2>
           <p className="mt-4 text-gray-700">
             Contrary to popular belief, hypnosis is not something you do to someone else, and it's not about reaching a trance state. It's a state of <strong>focused attention</strong> that you can achieve for yourself.
             In hypnosis, you are more <strong>open to suggestions</strong>, more <strong>relaxed</strong>, more <strong>present</strong>, and more attuned to your own <strong>feelings, thoughts and behaviours</strong>.
